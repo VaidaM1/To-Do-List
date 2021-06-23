@@ -59,7 +59,7 @@ function addNewTodo() {
     let description = document.getElementById("todo-description").value;
     //3 create todo object with received name and description
     var todo = {
-        id: parseInt(sessionStorage.setItem("id")) + 1,
+        id: parseInt(sessionStorage.getItem("id")) + 1,
         name: nameValue,
         description: description
     }
